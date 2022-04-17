@@ -1,0 +1,6 @@
+---
+region: "us-west-2"
+email_template: "myemail+{name}@mydomain.tld"
+accounts:
+  myaccount:
+    terraform: true

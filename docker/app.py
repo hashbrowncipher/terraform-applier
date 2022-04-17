@@ -9,6 +9,7 @@ if os.path.exists("/tmp/code"):
 
 env = dict(os.environ)
 env["HOME"] = "/tmp/code"
+#env["TF_LOG"] = "TRACE"
 shutil.copytree("/code", "/tmp/code", symlinks=True)
 os.chdir("/tmp/code")
 check_call(["terraform", "init"], env=env)
